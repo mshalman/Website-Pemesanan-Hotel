@@ -1,0 +1,123 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family:Arial, Helvetica, sans-serif
+}
+body{
+    color: #767676;
+}
+
+nav{
+    position: fixed;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+}
+.navbar-nav .nav-link {
+    color: #6c757d;
+    margin-right: 1rem;
+}
+.navbar-nav .nav-link.active {
+    color: #d4a373;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4a373;
+}
+
+.nav h2{
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #d4a45f;
+    margin-top: 20px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+}
+
+.table {
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.table tr{
+    margin: 40px;
+}
+
+section {
+	padding: 50px 0;
+}
+section h2 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 20px;
+	position: relative;
+}
+
+section h2::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width: 100px;
+	height: 4px;
+	background-color: #d4a355;
+	left: calc(50% - 50px);
+}
+
+#rooms{
+    background-color: #ededed;
+    width: 100%;
+}
+#experience{
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.card{
+    border: 0;
+    text-align: center;
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Menjaga aspek rasio gambar */
+    width: 100%;       /* Lebar gambar mengikuti lebar container */
+    height: 90%;      /* Tinggi gambar mengikuti tinggi container */
+}
+
+.btn{
+    background-color: #d4a355;
+    color: #ffffff;
+}
+
+footer {
+	background-color: #333333;
+	padding: 30px;
+	text-align: center;
+    color: #ffffff;
+}
+footer small {
+	color: #aeaeae;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+
+

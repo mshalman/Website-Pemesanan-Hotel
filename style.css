@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: tablet-gothic-condensed,sans-serif;
+}
+header {
+	height: 70px;
+	background-color: #c2222a;;
+}
+header h1{
+	display: inline-block;
+	float: left;
+	padding: 16px 24px;
+	text-transform: uppercase;
+}
+header a {
+	color: black;
+}
+header a:hover {
+	color: white;
+}
+header ul {
+	float: right;
+}
+header ul li{
+	padding: 24px;
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.container {
+	content: '';
+	display: block;
+	clear: both;
+}
+.menu-mobile {
+	float: right;
+	display: none;
+	padding: 18px;
+}
+.menu-mobile {
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 300px;
+	background-color: rgba(194, 34, 42, .9);
+	transition: 0.3s;
+}
+.sidebar ul li a{
+	color: white;
+}
+.sidebar ul li {
+	padding: 24px;
+}
+.sidebar ul li:hover {
+	background-color: black;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+.banner {
+	background-color: black;
+}
+.banner img {
+	width: 350px;
+	border-radius: 10px;
+	box-shadow: 0 0px 0px #ddd;
+}
+.banner h2,
+.banner p {
+	color: white;
+	text-align: left;
+	text-indent: 0px;
+	line-height: 28px;
+}
+section {
+	padding: 50px 0;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 20px;
+	position: relative;
+}
+section h3::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 120px;
+	height: 1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width: 40px;
+	height: 4px;
+	background-color: #c2222a;
+	left: calc(50% - 20px);
+}
+p {
+	text-align: center;
+	text-indent: 20px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+img.payment {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 200px;
+}
+#games {
+	background-color: #f9f9f9;
+}
+#games img {
+	width: 200px;
+	height: 220px;
+	margin: 15px;
+}
+#gear img {
+	margin: 15px;
+}
+#console img {
+	margin: 15px;
+}
+ul li {
+  list-style-type: none;
+}
+#console {
+	background-color: #f9f9f9;
+}
+footer {
+	background-color: #333;
+	padding: 30px;
+	text-align: center;
+}
+footer small {
+	color: white;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+@media (max-width:  768px){
+	.menu-mobile {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+}
